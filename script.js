@@ -175,6 +175,13 @@
             currentAudio.play();
             currentVideo.play();
             remainingTime = time;
+
+			let mins = Math.floor(time / 60);
+		    let secs = Math.floor(time % 60);
+		    Timer.innerText = `${mins}:${secs === 0 ? "0" : secs}`;
+
+		    time--;
+		    remainingTime = time;
             intervalTime = setInterval(() => {
                 let mins = Math.floor(time / 60);
                 let secs = Math.floor(time % 60);
