@@ -8,7 +8,55 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="app" class="container">
+        <div class="videoDiv vid-container">
+            <video controls loop muted id="beach"
+                src="https://media.istockphoto.com/id/1184292326/video/palm-tree-luxuty-beach-travel-holiday.mp4?s=mp4-640x640-is&k=20&c=QobA77AC-ZSo7Yj90TZWNXtke1_ljMZGA4bw91rg9-g="
+                height="100%" width="100%"></video>
+            <video controls loop muted id="rain"
+                src="https://cdn.pixabay.com/video/2018/07/02/17013-278400948_large.mp4" height="100%" width="100%"
+                class="hide"></video>
+            <div class="buttons" id="time-select">
+                <div id="2minDiv">
+                    <button class="btn twoMinBtn" id="smaller-mins">2 Mins</button>
+                </div>
+                <div id="5minDiv">
+                    <button class="btn fiveMinBtn" id="medium-mins">5 Mins</button>
+                </div>
+                <div id="10minDiv">
+                    <button class="btn tenMinBtn" id="long-mins">10 Mins</button>
+                </div>
+
+            </div>
+
+            <div id="playPause" class="play">
+                <div id="playAndPauseBtns">
+                    <i id="play" class="fa-solid fa-play"
+                        style="color: white;font-size: xxx-large;width: 100%;height: 100%;"></i>
+                    <i id="pause" class="fa-solid fa-pause"
+                        style="color: white;font-size: xxx-large;width: 100%;height: 100%;display: none;"></i>
+                </div>
+                <h1 id="timer" class="time-display" style="color: white;font-size: xx-large;">00:00</h1>
+            </div>
+
+            <div class="switchbtns sound-picker">
+                <button id="sun">
+                    <i id="sun-img" class="fa-solid fa-sun" style="font-size: xx-large;color: white;"></i>
+                </button>
+                <button id="cloud">
+                    <i id="cloud-img" class="fa-solid fa-cloud-rain" style="font-size: xx-large;color: white;"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="Both-audios player-container">
+        <audio class="song" id="rainSong" src="audios/rainSound.mp3" loop></audio>
+        <audio class="song" id="beachSong" src="audios/beachSound.mp3" loop></audio>
+    </div>
+	<script src="https://kit.fontawesome.com/f2a8f770c5.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./script.js">
+		
 </script>
 
 </body>
