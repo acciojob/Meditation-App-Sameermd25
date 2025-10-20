@@ -178,7 +178,7 @@
             intervalTime = setInterval(() => {
                 let mins = Math.floor(time / 60);
                 let secs = Math.floor(time % 60);
-                Timer.innerText = `${mins >= 10 ? mins : "0" + mins} : ${secs >= 10 ? secs : "0" + secs}`
+                Timer.innerText = `${mins}:${secs}`
                 time--;
                 remainingTime = time;
                 if (time < 0) {

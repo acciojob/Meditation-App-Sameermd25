@@ -16,18 +16,14 @@
             <video controls loop muted id="rain"
                 src="https://cdn.pixabay.com/video/2018/07/02/17013-278400948_large.mp4" height="100%" width="100%"
                 class="hide"></video>
-            <div class="buttons" id="time-select">
-                <div id="2minDiv">
-                    <button class="btn twoMinBtn" id="smaller-mins">2 Mins</button>
-                </div>
-                <div id="5minDiv">
-                    <button class="btn fiveMinBtn" id="medium-mins">5 Mins</button>
-                </div>
-                <div id="10minDiv">
-                    <button class="btn tenMinBtn" id="long-mins">10 Mins</button>
-                </div>
-
+            <div class="buttons time-select">
+                <button class="btn twoMinBtn" id="smaller-mins">2 Mins</button>
+                <button class="btn fiveMinBtn" id="medium-mins">5 Mins</button>
+                <button class="btn tenMinBtn" id="long-mins">10 Mins</button>
             </div>
+                
+
+            
 
             <div id="playPause" class="play">
                 <div id="playAndPauseBtns">
@@ -51,8 +47,8 @@
         </div>
     </div>
     <div class="Both-audios player-container">
-        <audio class="song" id="rainSong" src="audios/rainSound.mp3" loop></audio>
-        <audio class="song" id="beachSong" src="audios/beachSound.mp3" loop></audio>
+        <audio class="song" id="rainSong" src="Sounds/rain.mp3" loop></audio>
+        <audio class="song" id="beachSong" src="Sounds/beach.mp3" loop></audio>
     </div>
 	<script src="https://kit.fontawesome.com/f2a8f770c5.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./script.js">
